@@ -7,9 +7,6 @@
     "type": "git",
     "url": "git+https://github.com/papertiger12/prettier-config.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "keywords": [
     "prettier"
   ],
