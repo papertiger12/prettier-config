@@ -1,0 +1,36 @@
+{
+  "name": "@papertiger12/prettier-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.json",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/papertiger12/prettier-config.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "keywords": [
+    "prettier"
+  ],
+  "author": "myrossers@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "prenpm-publish": "yarn version --patch",
+    "npm-publish": "yarn publish --new-version $npm_package_version",
+    "postnpm-publish": "git push"
+  },
+  "bugs": {
+    "url": "https://github.com/papertiger12/prettier-config/issues"
+  },
+  "devDependencies": {
+    "git-branch-is": "^3.1.0",
+    "husky": "^4.2.5"
+  },
+  "homepage": "https://github.com/papertiger12/prettier-config#readme",
+  "husky": {
+    "hooks": {
+      "pre-push": "if yarn git-branch-is master; then yarn npm-publish; fi"
+    }
+  }
+}
