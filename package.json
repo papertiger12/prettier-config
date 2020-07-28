@@ -13,21 +13,12 @@
   "author": "myrossers@gmail.com",
   "license": "MIT",
   "scripts": {
-    "prenpm-publish": "yarn version --patch",
-    "npm-publish": "yarn publish --new-version $npm_package_version",
-    "postnpm-publish": "git push"
+    "pre-publish": "yarn version --patch",
+    "publish": "yarn publish --new-version $npm_package_version",
+    "post-publish": "git push"
   },
   "bugs": {
     "url": "https://github.com/papertiger12/prettier-config/issues"
   },
-  "devDependencies": {
-    "git-branch-is": "^3.1.0",
-    "husky": "^4.2.5"
-  },
-  "homepage": "https://github.com/papertiger12/prettier-config#readme",
-  "husky": {
-    "hooks": {
-      "pre-push": "if yarn git-branch-is master; then yarn npm-publish; fi"
-    }
-  }
+  "homepage": "https://github.com/papertiger12/prettier-config#readme"
 }
