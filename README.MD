@@ -1,7 +1,5 @@
 ## Prettier config
 
-#
-
 To add to your project:
 
 ```
