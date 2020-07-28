@@ -3,11 +3,11 @@
 To add to your project:
 
 ```
-yarn install -D @papertiger12/prettier-config
+yarn install -D @ross.myers/prettier-config
 ```
 
 then in your `package.json` add
 
 ```
-"prettier": "@papertiger12/prettier-config"
+"prettier": "@ross.myers/prettier-config"
 ```
