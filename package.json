@@ -1,7 +1,7 @@
 {
-  "name": "@papertiger12/prettier-config",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@ross.myers/prettier-config",
+  "version": "1.0.1",
+  "description": "To add to your project:",
   "main": "index.json",
   "repository": {
     "type": "git",
@@ -12,13 +12,10 @@
   ],
   "author": "myrossers@gmail.com",
   "license": "MIT",
-  "scripts": {
-    "pre-publish": "yarn version --patch",
-    "publish": "yarn publish --new-version $npm_package_version",
-    "post-publish": "git push"
-  },
   "bugs": {
     "url": "https://github.com/papertiger12/prettier-config/issues"
   },
-  "homepage": "https://github.com/papertiger12/prettier-config#readme"
+  "homepage": "https://github.com/papertiger12/prettier-config#readme",
+  "dependencies": {},
+  "devDependencies": {}
 }
