@@ -3,7 +3,7 @@
 To add to your project:
 
 ```
-yarn install -D @ross.myers/prettier-config
+yarn add -D @ross.myers/prettier-config
 ```
 
 then in your `package.json` add
